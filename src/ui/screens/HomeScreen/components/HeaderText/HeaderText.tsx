@@ -1,6 +1,6 @@
 import {View, Text} from 'react-native';
 import React from 'react';
-import {globalStyles} from '../../../shared/theme/globalStyles';
+import {globalStyles} from '../../../../shared/theme/globalStyles';
 
 interface Props {
   title: string;
