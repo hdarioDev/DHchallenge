@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* DHchalhengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DHchalhengeTests.m */; };
+		04139301814E4DBEBB29105B /* AvenirLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B404DA85E994ABD8898A727 /* AvenirLTStd-Roman.otf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-DHchalhenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-DHchalhenge.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-DHchalhenge-DHchalhengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-DHchalhenge-DHchalhengeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		946DDF0D39A94418B42CB6FB /* AvenirLTStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C9E9833616E546CD881AA682 /* AvenirLTStd-Black.otf */; };
+		97434E642631471EB5712E56 /* AvenirLTStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5726163E30AF4F0DBC4DAF52 /* AvenirLTStd-Book.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +42,13 @@
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-DHchalhenge-DHchalhengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DHchalhenge-DHchalhengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-DHchalhenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHchalhenge.debug.xcconfig"; path = "Target Support Files/Pods-DHchalhenge/Pods-DHchalhenge.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-DHchalhenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHchalhenge.release.xcconfig"; path = "Target Support Files/Pods-DHchalhenge/Pods-DHchalhenge.release.xcconfig"; sourceTree = "<group>"; };
+		5726163E30AF4F0DBC4DAF52 /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Book.otf"; path = "../assets/fonts/AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-DHchalhenge-DHchalhengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHchalhenge-DHchalhengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DHchalhenge-DHchalhengeTests/Pods-DHchalhenge-DHchalhengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-DHchalhenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DHchalhenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B404DA85E994ABD8898A727 /* AvenirLTStd-Roman.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Roman.otf"; path = "../assets/fonts/AvenirLTStd-Roman.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DHchalhenge/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-DHchalhenge-DHchalhengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHchalhenge-DHchalhengeTests.release.xcconfig"; path = "Target Support Files/Pods-DHchalhenge-DHchalhengeTests/Pods-DHchalhenge-DHchalhengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9E9833616E546CD881AA682 /* AvenirLTStd-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Black.otf"; path = "../assets/fonts/AvenirLTStd-Black.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -122,6 +128,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				88AF0E7D1D7F4CB9865301F9 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -135,6 +142,17 @@
 				00E356EE1AD99517003FC87E /* DHchalhengeTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		88AF0E7D1D7F4CB9865301F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9833616E546CD881AA682 /* AvenirLTStd-Black.otf */,
+				5726163E30AF4F0DBC4DAF52 /* AvenirLTStd-Book.otf */,
+				6B404DA85E994ABD8898A727 /* AvenirLTStd-Roman.otf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -244,6 +262,9 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				946DDF0D39A94418B42CB6FB /* AvenirLTStd-Black.otf in Resources */,
+				97434E642631471EB5712E56 /* AvenirLTStd-Book.otf in Resources */,
+				04139301814E4DBEBB29105B /* AvenirLTStd-Roman.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
