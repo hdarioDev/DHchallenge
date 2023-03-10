@@ -36,4 +36,9 @@ export const globalStyles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 18,
   },
+  numberBold: {
+    fontFamily: 'AvenirLTStd-Black',
+    fontSize: 16,
+    // lineHeight: 18,
+  },
 });
