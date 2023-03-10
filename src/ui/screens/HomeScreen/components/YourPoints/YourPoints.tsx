@@ -10,9 +10,6 @@ interface Props {
 }
 
 const YourPoints = ({month, sumPoints}: Props) => {
-  console.log('sumPoints ', sumPoints);
-  console.log('formatCurrency(sumPoints) ', formatCurrency(sumPoints));
-
   return (
     <View>
       <TitleGray title="TUS PUNTOS" />

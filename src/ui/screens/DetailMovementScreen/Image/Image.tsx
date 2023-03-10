@@ -1,4 +1,4 @@
-import {View, Image} from 'react-native';
+import {View, Image, Dimensions} from 'react-native';
 import React from 'react';
 import {styles} from './styles';
 
@@ -13,7 +13,7 @@ const ImageDetail = ({img}: Props) => {
         source={{
           uri: img,
         }}
-        style={styles.image}
+        style={{...styles.image, width: Dimensions.get('window').width - 40}}
         testID="image-component"
       />
     </View>

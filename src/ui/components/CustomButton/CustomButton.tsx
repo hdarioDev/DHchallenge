@@ -1,4 +1,4 @@
-import {TouchableOpacity, Text} from 'react-native';
+import {TouchableOpacity, Text, Dimensions} from 'react-native';
 
 import React from 'react';
 import {styles} from './styles';
@@ -10,7 +10,13 @@ interface Props {
 }
 
 const CustomButton = ({text, size, event}: Props) => {
-  const widthButton = size === 'large' ? 353 : 170;
+  console.log('Dimensions', Dimensions.get('window').width);
+
+  let widthButton = size === 'large' ? 353 : 170;
+  if (Dimensions.get('window').width < 390) {
+    widthButton = size === 'large' ? Dimensions.get('window').width - 40 : 150;
+  }
+
   return (
     <TouchableOpacity
       onPress={event}

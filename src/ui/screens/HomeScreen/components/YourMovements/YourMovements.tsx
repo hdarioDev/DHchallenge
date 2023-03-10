@@ -1,4 +1,4 @@
-import {FlatList, View} from 'react-native';
+import {Dimensions, FlatList, View} from 'react-native';
 import React from 'react';
 import {TitleGray} from '../../../../components/TitleGray';
 import {styles} from './styles';
@@ -14,12 +14,16 @@ const renderItem = ({item}: {item: Movement}) => (
 
 const YourMovements = () => {
   const {getSumPoints, items, filter, handleFilter} = useMovemets();
-
+  console.log("  Dimensions.get('window') ", Dimensions.get('window').height);
+  let styleHeight = {height: 350};
+  if (Dimensions.get('window').height < 800) {
+    styleHeight = {height: 290};
+  }
   return (
     <>
       <YourPoints month="Diciembre" sumPoints={getSumPoints} />
       <TitleGray title="TUS MOVIMIENTOS" />
-      <View style={styles.movementsContainer}>
+      <View style={{...styles.movementsContainer, ...styleHeight}}>
         <FlatList data={items} renderItem={renderItem} />
       </View>
       <View style={styles.buttonsContainer}>

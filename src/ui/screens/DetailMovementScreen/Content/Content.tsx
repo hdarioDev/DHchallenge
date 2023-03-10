@@ -5,6 +5,7 @@ import {styles} from './styles';
 import {CustomButton} from '../../../components/CustomButton';
 import {formattedDate} from '../../../../utils/dates';
 import {useNavigation} from '@react-navigation/native';
+import {formatCurrency} from '../../../../utils/numbers';
 
 interface Props {
   date: string;
@@ -25,7 +26,7 @@ const Content = ({date, points}: Props) => {
         date,
       )}`}</Text>
       <TitleGray title="Con esta compra acumulaste:" />
-      <Text style={styles.points}>{`${points} Puntos`}</Text>
+      <Text style={styles.points}>{`${formatCurrency(points)} Puntos`}</Text>
       <CustomButton text="Aceptar" size="large" event={handleNavigate} />
     </View>
   );
