@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
 import DetailMovementScreen from './DetailMovementScreen';
+import {NavigationContainer} from '@react-navigation/native';
 
 describe('DetailMovementScreen', () => {
   it('should render product title', () => {
@@ -12,7 +13,11 @@ describe('DetailMovementScreen', () => {
         points: 10,
       },
     };
-    const {getByText} = render(<DetailMovementScreen route={mockRoute} />);
+    const {getByText} = render(
+      <NavigationContainer>
+        <DetailMovementScreen route={mockRoute} />
+      </NavigationContainer>,
+    );
     expect(getByText('Test product')).toBeDefined();
   });
 });
