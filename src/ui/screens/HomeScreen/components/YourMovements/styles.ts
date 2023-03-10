@@ -11,4 +11,10 @@ export const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 10,
   },
+  buttonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 43,
+  },
 });

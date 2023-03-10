@@ -1,9 +1,10 @@
 import {FlatList, View} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import {TitleGray} from '../../../../components/TitleGray';
 import {styles} from './styles';
 import {MovementsItem} from '../../../../components/MovementsItem';
 import {Movement} from '../../../../../interfaces/movement';
+import {CustomButton} from '../../../../components/CustomButton';
 
 const movements: Movement[] = [
   {
@@ -33,11 +34,39 @@ const renderItem = ({item}: {item: Movement}) => (
 );
 
 const YourMovements = () => {
+  const [filter, setFilter] = useState(false);
+
+  console.log({filter});
+  const handleFilter = () => {
+    setFilter(!filter);
+  };
+
   return (
     <>
       <TitleGray title="TUS MOVIMIENTOS" />
       <View style={styles.movementsContainer}>
         <FlatList data={movements} renderItem={renderItem} />
+      </View>
+
+      <View style={styles.buttonsContainer}>
+        {filter ? (
+          <>
+            <CustomButton setFilter={handleFilter} text="Todos" size="large" />
+          </>
+        ) : (
+          <>
+            <CustomButton
+              setFilter={handleFilter}
+              text="Ganados"
+              size="medium"
+            />
+            <CustomButton
+              setFilter={handleFilter}
+              text="Canjeados"
+              size="medium"
+            />
+          </>
+        )}
       </View>
     </>
   );
