@@ -3,14 +3,20 @@ import React from 'react';
 import {styles} from './styles';
 import {Movement} from '../../../interfaces/movement';
 import {formattedDate} from '../../../utils/dates';
+import {useNavigation} from '@react-navigation/native';
 
 interface Props {
   movement: Movement;
 }
 
 const MovementsItem = ({movement}: Props) => {
+  const navigation = useNavigation<any>();
+
   return (
-    <TouchableOpacity style={styles.itemContainer}>
+    <TouchableOpacity
+      testID="item-container"
+      style={styles.itemContainer}
+      onPress={() => navigation.navigate('Detail', movement)}>
       <Image
         source={{
           uri: movement.image,
