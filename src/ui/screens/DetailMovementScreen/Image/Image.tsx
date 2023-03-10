@@ -8,7 +8,7 @@ interface Props {
 
 const ImageDetail = ({img}: Props) => {
   return (
-    <View>
+    <View style={styles.shadow}>
       <Image
         source={{
           uri: img,
