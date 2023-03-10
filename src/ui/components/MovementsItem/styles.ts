@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
     paddingTop: 3,
   },
   itemPoint: {
-    width: 40,
+    width: 50,
     height: 22,
     flexDirection: 'row',
     alignItems: 'center',

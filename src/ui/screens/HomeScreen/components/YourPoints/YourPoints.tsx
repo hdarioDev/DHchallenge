@@ -2,13 +2,17 @@ import {View, Text, Platform} from 'react-native';
 import React from 'react';
 import {styles} from './styles';
 import {TitleGray} from '../../../../components/TitleGray';
+import {formatCurrency} from '../../../../../utils/numbers';
 
 interface Props {
   month: string;
-  sumPoints: string;
+  sumPoints: number;
 }
 
 const YourPoints = ({month, sumPoints}: Props) => {
+  console.log('sumPoints ', sumPoints);
+  console.log('formatCurrency(sumPoints) ', formatCurrency(sumPoints));
+
   return (
     <View>
       <TitleGray title="TUS PUNTOS" />
@@ -18,7 +22,9 @@ const YourPoints = ({month, sumPoints}: Props) => {
       <View style={{...styles.cardContainer}}>
         <Text style={styles.cardTitle}>{month}</Text>
         <View style={styles.cardContentPoints}>
-          <Text style={styles.cardPoints}>{sumPoints} pts </Text>
+          <Text style={styles.cardPoints}>
+            {formatCurrency(sumPoints)} pts{' '}
+          </Text>
         </View>
       </View>
     </View>

@@ -14,8 +14,6 @@ export type RootStackParams = {
 };
 
 const StackNavigator = () => {
-  console.log('HomeScreen ', HomeScreen);
-
   return (
     <Stack.Navigator
       initialRouteName="Home"

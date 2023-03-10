@@ -6,7 +6,7 @@ import {styles} from './styles';
 interface Props {
   text: string;
   size: 'large' | 'medium';
-  event?: () => void;
+  event?: (typeFilter: string) => void;
 }
 
 const CustomButton = ({text, size, event}: Props) => {
