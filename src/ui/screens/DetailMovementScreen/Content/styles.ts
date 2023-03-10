@@ -9,5 +9,6 @@ export const styles = StyleSheet.create({
   points: {
     ...globalStyles.textExtraLargeBold,
     marginTop: 32,
+    marginBottom: 47,
   },
 });
