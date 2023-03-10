@@ -6,14 +6,14 @@ import {styles} from './styles';
 interface Props {
   text: string;
   size: 'large' | 'medium';
-  setFilter?: () => void;
+  event?: () => void;
 }
 
-const CustomButton = ({text, size, setFilter}: Props) => {
+const CustomButton = ({text, size, event}: Props) => {
   const widthButton = size === 'large' ? 353 : 170;
   return (
     <TouchableOpacity
-      onPress={setFilter}
+      onPress={event}
       style={{...styles.button, width: widthButton}}>
       <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>

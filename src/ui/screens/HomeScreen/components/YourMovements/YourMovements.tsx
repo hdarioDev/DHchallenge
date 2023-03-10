@@ -36,7 +36,6 @@ const renderItem = ({item}: {item: Movement}) => (
 const YourMovements = () => {
   const [filter, setFilter] = useState(false);
 
-  console.log({filter});
   const handleFilter = () => {
     setFilter(!filter);
   };
@@ -51,20 +50,12 @@ const YourMovements = () => {
       <View style={styles.buttonsContainer}>
         {filter ? (
           <>
-            <CustomButton setFilter={handleFilter} text="Todos" size="large" />
+            <CustomButton event={handleFilter} text="Todos" size="large" />
           </>
         ) : (
           <>
-            <CustomButton
-              setFilter={handleFilter}
-              text="Ganados"
-              size="medium"
-            />
-            <CustomButton
-              setFilter={handleFilter}
-              text="Canjeados"
-              size="medium"
-            />
+            <CustomButton event={handleFilter} text="Ganados" size="medium" />
+            <CustomButton event={handleFilter} text="Canjeados" size="medium" />
           </>
         )}
       </View>

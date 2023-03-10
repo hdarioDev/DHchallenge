@@ -4,6 +4,7 @@ import {TitleGray} from '../../../components/TitleGray';
 import {styles} from './styles';
 import {CustomButton} from '../../../components/CustomButton';
 import {formattedDate} from '../../../../utils/dates';
+import {useNavigation} from '@react-navigation/native';
 
 interface Props {
   date: string;
@@ -11,6 +12,12 @@ interface Props {
 }
 
 const Content = ({date, points}: Props) => {
+  const navigation = useNavigation<any>();
+
+  const handleNavigate = () => {
+    navigation.navigate('Home');
+  };
+
   return (
     <View>
       <TitleGray title="Detalles del producto:" />
@@ -19,7 +26,7 @@ const Content = ({date, points}: Props) => {
       )}`}</Text>
       <TitleGray title="Con esta compra acumulaste:" />
       <Text style={styles.points}>{`${points} Puntos`}</Text>
-      <CustomButton text="Aceptar" size="large" />
+      <CustomButton text="Aceptar" size="large" event={handleNavigate} />
     </View>
   );
 };
